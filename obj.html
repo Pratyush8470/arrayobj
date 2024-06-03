@@ -36,128 +36,150 @@
             storage: "1TB",
             processor: "M3",
             color: "Midnight Blue",
-            price: 110000
+            price: 110000,
+            img : "images/macair.jpeg"
         }, {
             name: "Apple 15 Pro-Max",
             storage: "512GB",
             processor: "A17 Pro",
             color: "Nattural Titanium",
-            price: 157000
+            price: 157000,
+            img : "images/15max.jpeg"
         },{
             name: "Samsung S24 Ultra",
             storage: "512GB",
             processor: "Snapdragon 8 Gen 3",
             color: "Titanium Gray",
-            price: 130000
+            price: 130000,
+            img : "images/24ultra.jpeg"
         },{
             name: "Samsung Book-4 Ultra",
             storage: "512GB",
             processor: "A17 Pro",
             color: "Nattural Titanium",
-            price: 157000
+            price: 157000,
+            img : "images/book4ultra.jpeg"
         },{
             name: "Apple 15 Pro",
             storage: "256GB",
             processor: "A17 Pro",
             color: "Nattural Titanium",
-            price: 129000
+            price: 129000,
+            img : "images/15max.jpeg"
         },{
             name: "Apple i-pad Pro",
             storage: "2TB",
             processor: "M4",
             color: "Silver",
-            price: 204000
+            price: 204000,
+            img : "images/ipad.jpeg"
         },{
             name: "Galaxy Tab s9 Ultra",
             storage: "2TB",
             processor: "Snapdragon 8 Gen 2 ",
             color: "Graphite",
-            price: 133000
+            price: 133000,
+            img : "images/s9ultra.jpeg"
         },{
             name: "Apple Air Pods Pro",
             storage: "--",
             processor: "--",
             color: "White",
-            price: 25000
+            price: 25000,
+            img : "images/airpods.jpeg"
         },{
             name: "Galaxy Buds Pro",
             storage: "--",
             processor: "--",
             color: "Black",
-            price: 10400
+            price: 10400,
+            img : "images/buds.jpeg"
         },{
             name: "Apple Vision Pro",
             storage: "2Tb",
             processor: "M2 R1",
             color: "White",
-            price: 390000
+            price: 390000,
+            img : "images/vision.jpeg"
         },{
             name: "Apple Watch Series 9",
             storage: "64GB",
             processor: "Watch OS",
             color: "Mid Night",
-            price: 44000
+            price: 44000,
+            img : "images/watch9.jpeg"
         },{
             name: "Galaxy Watch 6 classic",
             storage: "16GB",
             processor: "Wear OS 4.0",
             color: "Black",
-            price: 37500
+            price: 37500,
+            img : "images/watch6.jpg"
         },{
             name: "Apple Watch Ultra 2",
             storage: "64GB",
             processor: "Watch OS",
             color: "Blue Ocean Loop",
-            price: 90000
+            price: 90000,
+            img : "images/ultra2.jpg"
         },{
             name: "Apple MacBook Pro",
             storage: "8Tb",
             processor: "M3 Max",
             color: "Space Black",
-            price: 700000
+            price: 700000,
+            img : "images/macmax.jpeg"
         },{
             name: "Samsung Quled Smart TV",
             storage: "--",
             processor: "--",
             color: "--",
-            price: 200000
+            price: 200000,
+            img : "images/neo.jpeg"
         },{
             name: "Galaxy Book 4 Pro 360",
             storage: "1TB",
             processor: "intel i7 155H",
             color: "Grey",
-            price: 180000
+            price: 180000,
+            img : "images/book4.jpeg"
         },{
             name: "Galaxy s23 Ultra",
             storage: "512GB",
             processor: "Snapdragon 8 Gen 2",
             color: "Green",
-            price: 109000
+            price: 109000,
+            img : "images/23ultra.jpeg"
         },{
             name: "Apple Mac Studio",
             storage: "8TB",
             processor: "M2 Ultra",
             color: "--",
-            price: 420000
+            price: 420000,
+            img : "images/studio.jpeg"
         },{
             name: "Apple Mac Mini",
             storage: "2TB",
             processor: "M2 Pro",
             color: "--",
-            price: 60000
+            price: 60000,
+            img : "images/macmini.jpeg"
         },{
             name: "Apple Pro Display XDR",
             storage: "--",
             processor: "--",
             color: "Nattural Titanium",
-            price: 644400
+            price: 644400,
+            img : "images/display.jpeg"
         }]
 
 
         items.forEach((ele) => {
             idata.innerHTML += (`
             <div class="p-4 card" style="width:30%"> 
-                <img src="images/" class="card-img-top" alt="...">
+                <div style="width:284px;height:284px;">
+                    <img src="${ele.img}" class="card-img-top object-fit-cover" height="100%">
+                </div>
                 <div class="card-body">
                     <h3 class="card-title mb-4">${ele.name}</h3>
                     <span class="card-text fw-medium me-4">Processor : ${ele.processor}</span>
